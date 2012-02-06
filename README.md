@@ -23,11 +23,11 @@ To try it out follow the steps below.
 
 ## HTML
 
-<div data-lift="SearchBlogPost">
-	<div data-lift-id="datalist"></div>
-	<input name="search"
-		class="search-query" type="text"></input>
-	<button type="submit" class="btn btn-small btn-primary" style="position: relative; top: -3px">
-		<i class="icon-search icon-white"></i>
-	</button>
-</div>
+  <div data-lift="SearchBlogPost">
+	  <div data-lift-id="datalist"></div>
+	  <input name="search"
+		  class="search-query" type="text"></input>
+	  <button type="submit" class="btn btn-small btn-primary" style="position: relative; top: -3px">
+		  <i class="icon-search icon-white"></i>
+	  </button>
+  </div>
