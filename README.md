@@ -28,17 +28,17 @@ To try it out follow the steps below.
 
 ## Snippet
 
-  def render = {
-    val autoComplete = AutoComplete((current: String) => {
-      (1 to 10) map (n => (current + n, current + n))
-    })
+    def render = {
+      val autoComplete = AutoComplete((current: String) => {
+	(1 to 10) map (n => (current + n, current + n))
+      })
 
-    val name = autoComplete.inputName
+      val name = autoComplete.inputName
 
-    "data-lift-id=datalist" #> autoComplete.datalist &
-      "name=search [name]" #> name &
-      "name=search [id]" #> name &
-      "name=search [oninput]" #> autoComplete.onChange &
-      "name=search [list]" #> autoComplete.datalistId &
-      "name=search [placeholder]" #> Text(S ? "SEARCH")
-  }
+      "data-lift-id=datalist" #> autoComplete.datalist &
+	"name=search [name]" #> name &
+	"name=search [id]" #> name &
+	"name=search [oninput]" #> autoComplete.onChange &
+	"name=search [list]" #> autoComplete.datalistId &
+	"name=search [placeholder]" #> Text(S ? "SEARCH")
+    }
