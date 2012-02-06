@@ -3,7 +3,7 @@ To try it out follow the steps below.
 
 # Check out the code
 
-  $ `git clone git://github.com/sbradl/AutoComplete.git`
+  $ git clone git://github.com/sbradl/AutoComplete.git
 
 # Run SBT
 
@@ -12,5 +12,9 @@ To try it out follow the steps below.
 # Compile and publish it
 
   $ sbt> compile
+
   $ sbt> publish-local
 
+# Add dependecy to your project
+
+"eu.sbradl" %% "autocomplete" % "1.0.0" % "compile"
