@@ -9,7 +9,7 @@ To try it out follow the steps below.
 
   $ sbt
 
-# Compile and publish it
+# Compile and publish
 
   $ sbt> compile
 
@@ -18,3 +18,15 @@ To try it out follow the steps below.
 # Add dependecy to your project
 
 "eu.sbradl" %% "autocomplete" % "1.0.0" % "compile"
+
+# Example usage
+
+## HTML
+<div data-lift="SearchBlogPost">
+							<div data-lift-id="datalist"></div>
+							<input name="search"
+								class="search-query" type="text"></input>
+							<button type="submit" class="btn btn-small btn-primary" style="position: relative; top: -3px">
+								<i class="icon-search icon-white"></i>
+							</button>
+						</div>
