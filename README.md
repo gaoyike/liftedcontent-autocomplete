@@ -3,7 +3,14 @@ To try it out follow the steps below.
 
 # Check out the code
 
+  $ git clone git://github.com/sbradl/AutoComplete.git
+
 # Run SBT
 
+  $ sbt
+
 # Compile and publish it
+
+  $ sbt> compile
+  $ sbt> publish-local
 
