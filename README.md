@@ -23,6 +23,7 @@ To try it out follow the steps below.
 
 ## HTML
 
+<div>
   <div data-lift="SearchBlogPost">
 	  <div data-lift-id="datalist"></div>
 	  <input name="search"
@@ -31,3 +32,4 @@ To try it out follow the steps below.
 		  <i class="icon-search icon-white"></i>
 	  </button>
   </div>
+</div>
