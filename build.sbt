@@ -1,4 +1,4 @@
-name := "AutoComplete"
+name := "liftedcontent-autocomplete"
 
 organization := "eu.sbradl"
 
