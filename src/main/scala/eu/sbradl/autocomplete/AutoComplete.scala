@@ -1,9 +1,11 @@
 package eu.sbradl.autocomplete
 
-import net.liftweb.util.Helpers._
-import net.liftweb.http.SHtml
-import net.liftweb.http.js.JsCmds
+import scala.xml.NodeSeq.seqToNodeSeq
 import scala.xml.NodeSeq
+
+import net.liftweb.http.js.JsCmds
+import net.liftweb.http.SHtml
+import net.liftweb.util.Helpers.nextFuncName
 
 object AutoComplete {
 
