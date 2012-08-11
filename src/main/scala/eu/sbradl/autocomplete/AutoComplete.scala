@@ -12,10 +12,10 @@ object AutoComplete {
   /**
    * Creates a new auto-complete object.
    * 
-   * @param choices The function used to get key-value pairs matching the given input.
+   * @param choices The function used to get values matching the given input.
    * @param minChars The minimum number of characters needed to trigger auto-completion.
    */
-  def apply(choices: (String) => Seq[(String, String)], minChars: Int = 3) = new AutoComplete(choices, minChars)
+  def apply(choices: (String) => Seq[String], minChars: Int = 3) = new AutoComplete(choices, minChars)
 
 }
 
@@ -25,7 +25,7 @@ object AutoComplete {
  * [[AutoComplete.input]]. If you need to use an already existing input element you 
  * can use [[AutoComplete.onChange]] to trigger the autocompletion.
  */
-class AutoComplete(choices: (String) => Seq[(String, String)], minChars: Int) {
+class AutoComplete(choices: (String) => Seq[String], minChars: Int) {
 
   /**
    * The ID used for the datalist element.
@@ -60,9 +60,7 @@ class AutoComplete(choices: (String) => Seq[(String, String)], minChars: Int) {
 
   private def datalistContent(current: String) = if (current.length >= minChars) {
 
-    choices(current) map {
-      pair => <option value={ pair._1 } />
-    }
+    choices(current) map (choice => <option value={ choice } />)
 
   } else NodeSeq.Empty
 }

@@ -14,7 +14,7 @@ import scala.xml.Node
 @RunWith(classOf[JUnitRunner])
 class AutoCompleteSpecs extends SpecificationWithJUnit {
 
-  def choices(input: String) = for (i <- 1 to 3) yield (i.toString, input + i)
+  def choices(input: String) = for (i <- 1 to 3) yield (input + i)
 
   val autocomplete = AutoComplete(choices)
 
