@@ -35,9 +35,9 @@ class AutoCompleteSpecs extends SpecificationWithJUnit {
     "contain the correct elements" in {
       val options = (autocomplete.datalist("test") \ "option").toList
       
-      options(0) must be equalTo <option value="1">test1</option>
-      options(1) must be equalTo <option value="2">test2</option>
-      options(2) must be equalTo <option value="3">test3</option>
+      options(0) must be equalTo <option value="test1"></option>
+      options(1) must be equalTo <option value="test2"></option>
+      options(2) must be equalTo <option value="test3"></option>
     }
   }
 
