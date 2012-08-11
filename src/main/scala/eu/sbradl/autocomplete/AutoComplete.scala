@@ -61,7 +61,7 @@ class AutoComplete(choices: (String) => Seq[(String, String)], minChars: Int) {
   private def datalistContent(current: String) = if (current.length >= minChars) {
 
     choices(current) map {
-      pair => <option value={ pair._1 }>{ pair._2 }</option>
+      pair => <option value={ pair._1 } />
     }
 
   } else NodeSeq.Empty
